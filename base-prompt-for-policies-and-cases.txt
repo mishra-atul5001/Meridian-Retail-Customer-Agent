@@ -1,0 +1,26 @@
+Create exactly two input files for a fictional Meridian Retail classroom demo. Do not create the application yet and do not add extra features.
+
+1. Create policy.md with exactly this content:
+
+# Meridian Retail Support Drafting Policy
+
+P1. Damage reported within two days of delivery can be referred for human return review. This does not mean a refund has been approved.
+
+P2. The delivery date is required to apply the two-day rule. If it is missing, ask for it.
+
+P3. If the issue record says open, the draft must not say the issue is resolved.
+
+P4. This assistant drafts for human review only. It cannot approve refunds, send messages, or change records.
+
+2. Create cases.json as one JSON object with three keys: C1, C2, and C3.
+
+C1 fields:
+case_id C1; order_id MR-1042; product Jacket; customer_question "The jacket arrived yesterday and the zip is broken. Can I return it?"; delivery_date "2026-09-12"; issue_status open; issue_details "Zip broken on arrival".
+
+C2 fields:
+case_id C2; order_id MR-1088; product Jacket; customer_question "The jacket has a broken zip. Can I return it?"; delivery_date null; issue_status open; issue_details "Zip broken; delivery date missing".
+
+C3 fields:
+case_id C3; order_id MR-1126; product Shoes; customer_question "Please confirm that my issue is resolved."; delivery_date "2026-09-10"; issue_status open; issue_details "Replacement request is still under review".
+
+After creating only those two files, validate cases.json with Python and report whether it is valid JSON.
