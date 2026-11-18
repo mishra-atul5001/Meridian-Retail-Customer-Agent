@@ -1,4 +1,4 @@
-# Meridian Retail Support-Draft Review Demo
+# Meridian-Retail-Customer-Agent
 
 This small command-line classroom demo prepares a support reply for human review. It does not send messages, approve refunds, or change case records.
 
@@ -31,4 +31,3 @@ Run the API-free test suite with:
 ```text
 python -m pytest
 ```
-# Meridian-Retail-Customer-Agent
