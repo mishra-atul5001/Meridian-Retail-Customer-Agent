@@ -94,6 +94,7 @@ def test_ollama_request_uses_local_chat_api_and_json_schema(monkeypatch):
     assert seen["body"]["model"] == "test-model"
     assert seen["body"]["format"] == app.RESPONSE_SCHEMA
     assert seen["body"]["stream"] is False
+    assert "delivery_date is supplied" in seen["body"]["messages"][0]["content"]
 
 
 def test_all_required_input_and_output_files_exist():
